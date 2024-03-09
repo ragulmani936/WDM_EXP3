@@ -115,7 +115,7 @@ else:
 ```
 ### Output:
 
-![img1]()
+![img1](https://github.com/ragulmani936/WDM_EXP3/blob/main/img1.png)
 
 ### Visualization:
 ```python
@@ -145,9 +145,9 @@ visualize_patterns_line(party_wear_result, 'Party Wear')
 ```
 ### Output:
 
-![img2]()
+![img2](https://github.com/ragulmani936/WDM_EXP3/blob/main/img2.png)
 
-![img3]()
+![img3](https://github.com/ragulmani936/WDM_EXP3/blob/main/img3.png)
 
 ### Result:
 Thus the implementation of the GSP algorithm in python has been successfully executed.
