@@ -37,6 +37,7 @@ for each wear category.</p>
 8. Visulaize the sequence patterns using matplotlib.
 </p>
 ### Program:
+~~~
 from collections import defaultdict
 from itertools import combinations
 # Function to generate candidate k-item sequences
@@ -48,8 +49,9 @@ def generate_candidates(dataset, k):
             candidate_count[itemset] += 1
 
     return candidate_count
-
+~~~
 # Function to perform GSP algorithm
+~~~
 def gsp(dataset, min_support):
     # Step 1: Initialize the frequent patterns dictionary
     frequent_patterns = defaultdict(int)
@@ -70,9 +72,10 @@ def gsp(dataset, min_support):
         frequent_patterns.update({itemset: count for itemset, count in candidate_count.items() if count >= min_support})
 
     return frequent_patterns
-
+~~~
 
 #Example dataset for each category
+~~~
 top_wear_data = [
  ["blouse", "t-shirt", "tank_top"],
  ["hoodie", "sweater", "top"],["hoodie"],["hoodie","sweater"]
@@ -90,9 +93,11 @@ party_wear_data = [
  ["party_dress", "formal_dress", "suit"],
  ["party_dress", "formal_dress", "suit"],
  ["party_dress"],["party_dress"],
+ ~~~
  # Add more sequences for party wear
 ]
 #Minimum support threshold
+~~~
 min_support = 2
 #Perform GSP algorithm for each category
 top_wear_result = gsp(top_wear_data, min_support)
@@ -119,7 +124,7 @@ if party_wear_result:
         print(f"Pattern: {pattern}, Support: {support}")
 else:
     print("No frequent sequential patterns found in Party Wear.")
-
+~~~
 ### Output:
 
 
