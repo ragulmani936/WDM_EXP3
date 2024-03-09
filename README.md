@@ -37,7 +37,6 @@ for each wear category.</p>
 8. Visulaize the sequence patterns using matplotlib.
 </p>
 ### Program:
-~~~
 from collections import defaultdict
 from itertools import combinations
 # Function to generate candidate k-item sequences
@@ -120,7 +119,7 @@ if party_wear_result:
         print(f"Pattern: {pattern}, Support: {support}")
 else:
     print("No frequent sequential patterns found in Party Wear.")
-~~~
+
 ### Output:
 
 
